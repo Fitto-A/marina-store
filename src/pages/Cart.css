@@ -1,6 +1,8 @@
 :root{
     --clr-verde: #0AADBF;
     --clr-verde-osc: #43797F;
+    --clr-naranja: #E16F54;
+    --clr-naranja-claro: #E68E70;
     --clr-arena: #F2D5C4;
 }
 
@@ -11,15 +13,12 @@
 }
 .cart {
     display: table;
-    margin: auto;
+    margin: 5rem auto;
     text-align: center;
-    /* border-left: solid 1px var(--clr-verde-osc);
-    border-right: solid 3px var(--clr-verde); */
 	padding: 5rem;
 	border: solid 3px var(--clr-verde);
 	border-radius: 10px;
     background-color: var(--clr-arena);
-	margin-top: 5rem;
 }
 
 .empty-cart{
@@ -48,7 +47,7 @@
 }
 
 .divisor {
-	border-bottom: 1px solid var(--clr-verde-osc);
+	border-bottom: 1px solid var(--clr-naranja);
 	max-width: 500px;
     padding-top: 2rem;
 	margin: auto;
@@ -74,7 +73,7 @@
 	border: none;
 	text-transform: capitalize;
 	background-color: transparent;
-	color: var(--clr-verde-osc);
+	color: var(--clr-naranja);
 	cursor: pointer;
 }
 

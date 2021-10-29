@@ -6,7 +6,10 @@ const SingleProduct = ({id, name, src, price, description, category}) => {
         <Link to={`/shopItem/${id}`} >
             <article className="product">
                 <div className="img-container">
-                    <img src={src} alt={name} />
+                    <div className="img-bg">
+                        <img src={src} alt={name} />
+
+                    </div>
                 </div>
                 <div className="product-info">
                     <p className='price'>${price}</p>

@@ -8,12 +8,16 @@ import Shop from './pages/Shop';
 import ShopItem from './pages/ShopItem';
 import Cart from './pages/Cart';
 import Error from './pages/Error';
+import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
   return (
     <Router basename="/">
       <Navbar />
+
+      <ScrollToTop />
       <Switch>
         <Route exact path='/shopping-cart/'>
           <Home />
@@ -31,6 +35,7 @@ function App() {
           <Error />
         </Route>
       </Switch>
+      <Footer />
     </Router>
 
   );

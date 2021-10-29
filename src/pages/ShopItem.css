@@ -1,34 +1,121 @@
 .section-product {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* margin: auto; */
+    display: flex;
     align-content: center;
-    justify-content: center;
-    padding-top: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
-.img-section {
-	grid-column-start: 2;
+
+.product-content{
+    display: flex;
+    z-index: 1;
+    margin-left: -20rem;
+    left: 0;
+    justify-content: space-between;
+}
+.bg-square{
+    background-color: var(--clr-verde);
+    z-index: -1;
+    width: 800px;
+    border-radius: 0px 8px 8px 0px;
+    height: 500px;
+}
+.division {
+	border-bottom: 1px solid var(--clr-naranja);
+	max-width: 300px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* .img-section {
+    margin: 1rem 6rem 0 0;
+} */
+
+.img-section{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.6s ease-out;
 }
 
 .img-product {
     max-width: 400px;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    cursor: crosshair;
+    /* border: solid 4px var(--clr-verde); */
+	border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
 }
 
-.img-product:hover{
+.img-section:hover{
     transform: scale(1.5 , 1.5);
+    border-color: var(--clr-naranja);
+    transition: all 0.6s ease-in;
 }
+
+.img-bg-item{
+    display: flex;
+    position: relative;
+    width: 408px;
+    height: 408px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-verde);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-bg-item:hover::before{
+    content: '';
+    position: absolute;
+    width: 179px;
+    height: 140%;
+    /* background-color: var(--clr-naranja); */
+    background: linear-gradient(var(--clr-naranja), var(--clr-azul));
+    animation: border-animation 8s linear infinite;
+}
+
+.img-bg-item:hover:after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: var(--clr-verde);
+    border-radius: 10px;
+}
+
+@keyframes border-animation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
+}
+
 
 @media screen and (max-width: 1390px) {
     .section-product {
         padding-top: 4rem;
+        padding-bottom: 4rem;
     }
     .img-product {
         margin-top: 3rem;
         max-width: 300px;
+        margin-left: 5rem;
     }
     
     .img-product:hover{
         transform: scale(1.4 , 1.4);
     }
+
+    .img-section {
+        margin: 3rem 6rem 0 0;
+    }
+
+    .bg-square{
+        width: 500px;
+    }
 }
+

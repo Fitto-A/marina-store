@@ -17,8 +17,8 @@
     display: inline;
     position: relative;
     border: 2px solid var(--clr-verde);
-    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
-    border-radius: 10px;
+    transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+    /* border-radius: 10px; */
     text-transform: uppercase;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -44,7 +44,7 @@
 	content: '';
 	color: var(--clr-arena);
 	background: var(--clr-verde);
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+	transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 }
 
 
@@ -54,8 +54,8 @@
     display: inline-block;
     position: relative;
     border: 2px solid var(--clr-verde);
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-    border-radius: 10px;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    /* border-radius: 10px; */
     text-transform: uppercase;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -81,7 +81,7 @@
 	content: '';
 	color: #F2D5C4;
 	background: #0AADBF;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
 
@@ -91,7 +91,7 @@
     display: inline-block;
     position: relative;
     border: 2px solid var(--clr-verde);
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     border-radius: 10px;
     text-transform: uppercase;
     padding-left: 3rem;

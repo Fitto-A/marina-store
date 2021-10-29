@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useGlobalContext } from '../context'
-import logo from '../images/logo.png'
+import logo from '../images/Marina-logo.png';
 import { HiShoppingCart } from "react-icons/hi";
 
 
@@ -17,7 +17,7 @@ const Navbar = () =>{
                     <Link to='/shopping-cart/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/shop'>Shop</Link>
+                    <Link to='/shop'>Tienda</Link>
                 </li>
                 <li className='cart-icon'>
                     <Link to='/cart'> <HiShoppingCart/> </Link>

@@ -1,0 +1,117 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-azul);
+    margin: auto;
+    padding-top: 4rem;
+    bottom: 0;
+    margin-top: auto;
+    border-top: solid 4px var(--clr-verde);
+}
+
+.footer-division{
+    border-bottom: solid 1px var(--clr-verde);
+    width: 25%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.redes{ 
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.redes a{
+    color: var(--clr-arena);
+    text-align: center;
+    transition: all 0.6s ease-out;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.redes a:hover{
+    color: var(--clr-naranja-claro);
+    text-align: center;
+    transition: all 0.6s ease-in;
+}
+
+.github {
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+}
+
+.page-links{
+    margin: auto;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.github p{
+    color: var(--clr-verde);
+    margin-bottom: 1rem;
+}
+
+.github-icon a{
+    color: var(--clr-arena);
+    transition: all 0.6s ease-out;
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+
+}
+
+.github a:hover{
+    color: var(--clr-naranja);
+    transition: all 0.6s ease-in;
+}
+
+.footer-github-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--clr-arena);
+    padding: 2rem 1rem 0.5rem 1rem;
+    text-decoration: none;
+    justify-content: center;
+}
+
+
+.portfolio-link{
+    font-size: 1rem;
+    color: var(--clr-arena);
+    text-decoration: none;
+    color: var(--clr-verde);
+    transition: all 0.6s ease-out;
+}
+
+.portfolio-link:hover{
+    color: var(--clr-naranja);
+    transition: all 0.6s ease-in;
+}
+
+img.logo-footer {
+    border: none;
+    max-width: 100px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.page-links a{
+    text-decoration: none;
+    color: var(--clr-arena);
+    line-height: 2;
+    font-size: 1rem;
+    transition: all 0.6s ease-out;
+    padding: auto 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+
+.page-links a:hover{
+    color: var(--clr-naranja);
+    transition: all 0.6s ease-in;
+}

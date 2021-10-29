@@ -3,13 +3,6 @@ import products from './catalog';
 
 const AppContext = React.createContext()
 
-
-// const initialItems = {
-//     cart: [],
-//     amount: 0,
-//     total: 0,
-// }
-
 const AppProvider = ({children}) => {
     const {name, src, price, description, category} = products
 
@@ -20,8 +13,6 @@ const AppProvider = ({children}) => {
     const [totalPrice, setTotalPrice] = useState(0);
 
     const [showBtn, setShowBtn] = useState(false);
-
-    // const [initialCart, setInitialCart] = useState(initialItems);
 
     const sumAmount = () => {
         setAmount(amount + 1)
@@ -88,12 +79,6 @@ const AppProvider = ({children}) => {
             if(cartItems.indexOf(cartItems[i]) !== i) cartItems.splice(i,1);
             }
     }
-
-
-    console.log(cartItems)
-    console.log(totalPrice)
-
-
     
     return (
         <AppContext.Provider 
