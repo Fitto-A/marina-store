@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/marina-store/static/css/main.7db4f664.chunk.css",
+    "main.css": "/marina-store/static/css/main.f9ce97a6.chunk.css",
     "main.js": "/marina-store/static/js/main.be9fcfff.chunk.js",
     "main.js.map": "/marina-store/static/js/main.be9fcfff.chunk.js.map",
     "runtime-main.js": "/marina-store/static/js/runtime-main.554e4690.js",
@@ -8,7 +8,7 @@
     "static/js/2.b254d3d6.chunk.js": "/marina-store/static/js/2.b254d3d6.chunk.js",
     "static/js/2.b254d3d6.chunk.js.map": "/marina-store/static/js/2.b254d3d6.chunk.js.map",
     "index.html": "/marina-store/index.html",
-    "static/css/main.7db4f664.chunk.css.map": "/marina-store/static/css/main.7db4f664.chunk.css.map",
+    "static/css/main.f9ce97a6.chunk.css.map": "/marina-store/static/css/main.f9ce97a6.chunk.css.map",
     "static/js/2.b254d3d6.chunk.js.LICENSE.txt": "/marina-store/static/js/2.b254d3d6.chunk.js.LICENSE.txt",
     "static/media/Bolso-celeste.c59ae9db.jpg": "/marina-store/static/media/Bolso-celeste.c59ae9db.jpg",
     "static/media/Bolso-matero-edit.34cf8882.png": "/marina-store/static/media/Bolso-matero-edit.34cf8882.png",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.554e4690.js",
     "static/js/2.b254d3d6.chunk.js",
-    "static/css/main.7db4f664.chunk.css",
+    "static/css/main.f9ce97a6.chunk.css",
     "static/js/main.be9fcfff.chunk.js"
   ]
 }
