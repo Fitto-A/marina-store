@@ -14,18 +14,28 @@ const SideBar = ({selectedCategory, setSelectedCategory}) => {
             className: 'side-link'
         },
         {
-            id: 'carteras',
-            name: 'Carteras',
-            className: 'side-link'
-        },
-        {
             id: 'accesorios',
             name: 'Accesorios',
             className: 'side-link'
         },
         {
+            id: 'bolsos',
+            name: 'Bolsos',
+            className: 'side-link'
+        },
+        {
+            id: 'carteras',
+            name: 'Carteras',
+            className: 'side-link'
+        },
+        {
             id: 'riñoneras',
             name: 'Riñoneras',
+            className: 'side-link'
+        },
+        {
+            id: 'sets materos',
+            name: 'Sets materos',
             className: 'side-link'
         }
     ]

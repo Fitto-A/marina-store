@@ -92,3 +92,14 @@ img.logo-sideBar {
     padding-top: 30px;
     margin: auto;
 }
+
+@media screen and (max-width: 1300px) {
+    .sideBar{
+        width: 250px;
+        padding-top: 7rem;
+    }
+
+    .side-link{
+        padding-left: 3rem;
+    }
+}

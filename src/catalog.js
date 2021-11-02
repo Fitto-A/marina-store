@@ -8,6 +8,9 @@ import riñoneraBlanca from './images/Riñonera-blanca.jpg';
 import riñoneraBlanca2 from './images/Riñonera-blanca2.jpg';
 import riñoneraNegra from './images/Riñonera-negra.jpg';
 import riñoneraNegra2 from './images/Riñonera-negra2.jpg';
+import setMateroMarron from './images/Set-matero-marron.jpg';
+import setMateroByn from './images/Set-matero-byn.jpg';
+import bolsoCeleste from './images/Bolso-celeste.jpg';
 
 const catalog = [
     {
@@ -92,6 +95,33 @@ const catalog = [
         price: 750,
         description: 'riñonera negra',
         category: 'riñoneras',
+        quantity: 0,
+    },
+    {
+        id: 10,
+        name: 'set matero palmeras',
+        src: setMateroMarron,
+        price: 800,
+        description: 'set matero palmeras',
+        category: 'sets materos',
+        quantity: 0,
+    },
+    {
+        id: 11,
+        name: 'set matero estampado',
+        src: setMateroByn,
+        price: 800,
+        description: 'set matero estampado',
+        category: 'sets materos',
+        quantity: 0,
+    },
+    {
+        id: 12,
+        name: 'bolso de playa',
+        src: bolsoCeleste,
+        price: 750,
+        description: 'bolso de playa',
+        category: 'bolsos',
         quantity: 0,
     },
 ];

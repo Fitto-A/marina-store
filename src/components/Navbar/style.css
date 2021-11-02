@@ -1,0 +1,84 @@
+.navbar {
+    color: var(--clr-arena);
+    background: var(--clr-verde);
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    justify-content: space-between;
+    position: sticky;
+    box-shadow: 0 5px 6px 0px rgb(0 0 0 / 30%);
+    z-index: 10;
+}
+
+.nav-logo {
+    max-height: 3.5rem;
+    margin-left: 60px;
+    margin-top: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    font-size: 1.5rem;
+}
+
+.nav-links a{
+    color: var(--clr-arena);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+.cart-link {
+    display: flex;
+}
+
+.nav-amount {
+    /* margin-left: -12px; */
+    font-weight: bold;
+    margin-top: .8rem;
+}
+
+.cart-icon {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .navbar{
+        height: 4rem;
+    }
+    .nav-links{
+        font-size: 1.2rem;
+    }    
+    .nav-logo{
+        max-height: 2.5rem;
+    }    
+    .cart-icon {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-logo{
+        max-height: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-links{
+        display: none;
+    }
+
+    .active-nav-links{
+        display: flex;
+    }
+
+}

@@ -15,7 +15,7 @@
 .bg-square{
     background-color: var(--clr-verde);
     z-index: -1;
-    width: 800px;
+    width: 45%;
     border-radius: 0px 8px 8px 0px;
     height: 500px;
 }
@@ -26,9 +26,22 @@
     margin-bottom: 20px;
 }
 
-/* .img-section {
-    margin: 1rem 6rem 0 0;
-} */
+.description {
+    display: table;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 2rem 2rem 6rem;
+}
+.description h3 {
+    font-size: 2.5rem;
+    color: var(--clr-verde);
+}
+.description h2 {
+    text-transform: capitalize;
+    color: var(--clr-verde-osc);
+    font-size: 1.5rem;
+    padding: 0rem 0 1rem 0;
+}
 
 .img-section{
     margin: auto;
@@ -40,9 +53,7 @@
 
 .img-product {
     max-width: 400px;
-    /* margin-top: 2rem; */
     cursor: crosshair;
-    /* border: solid 4px var(--clr-verde); */
 	border-radius: 8px;
     display: flex;
     justify-content: center;

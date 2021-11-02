@@ -13,7 +13,6 @@
     box-sizing: border-box;
 }
 
-
 html {
     height: 100%;
     position: relative;
@@ -31,56 +30,6 @@ body {
 }
 ul {
     list-style-type: none;
-}
-/* 
----------
-NAVBAR
----------
-*/
-
-.navbar {
-    color: var(--clr-arena);
-    background: var(--clr-verde);
-    display: flex;
-    align-items: center;
-    height: 6rem;
-    justify-content: space-between;
-    position: sticky;
-    box-shadow: 0 5px 6px 0px rgb(0 0 0 / 30%);
-    z-index: 10;
-}
-
-
-.nav-logo {
-    max-height: 3.5rem;
-    margin-left: 60px;
-    margin-top: 0.5rem;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    margin-right: 60px;
-    font-size: 1.5rem;
-}
-
-.nav-links a{
-    color: var(--clr-arena);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 15px;
-}
-
-.nav-amount {
-    margin-left: -12px;
-    font-weight: bold;
-}
-
-.cart-icon {
-    font-size: 2rem;
-    margin-top: 10px;
 }
 
 /* 
@@ -104,26 +53,11 @@ HOME
     background-repeat: no-repeat;
   }
 
-
 .home-left {
     margin: auto;
     display: flex;
     content: '';
     margin-left: 1rem;
-}
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-
-    }
-	50% {
-		transform: translate(80px, 40px);
-	}
-	100% {
-		transform: translatey(0px);
-
-    }
 }
 
 .set-matero {
@@ -157,6 +91,47 @@ img .bolso-matero {
     width: 60%;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+
+    }
+	50% {
+		transform: translate(80px, 40px);
+	}
+	100% {
+		transform: translatey(0px);
+
+    }
+}
+
+@keyframes floatOnMobileLeft {
+	0% {
+		transform: translatey(0px);
+
+    }
+	50% {
+		transform: translate(60px, 30px);
+    }
+	100% {
+		transform: translatey(0px);
+
+    }
+}
+
+@keyframes floatOnMobileRight {
+	0% {
+		transform: translatey(0px);
+
+    }
+	50% {
+		transform: translate(-60px, -30px);
+	}
+	100% {
+		transform: translatey(0px);
+
+    }
+}
 
 .home {
     position: relative;
@@ -185,13 +160,14 @@ img .bolso-matero {
     max-width: 500px;
     margin-bottom: 2rem;
 }
+
+
 .btn-home {
 	font-size: 2rem;
 	padding: 0.5rem;
 	color: var(--clr-verde);
 	background: transparent;
 	border: solid 3px var(--clr-verde);
-	/* border-radius: 8px; */
 	margin-top: 20px;
 }
 
@@ -257,35 +233,7 @@ a.github-icon:hover{
     margin: auto;
 }
 
-@media screen and (max-width: 1390px) {
-    .images-home {
-        grid-template-columns: repeat(auto-fit, minmax(50px, 300px));
-    }
-    .images-home img{
-        max-width: 300px;
-    }
-    .home-division{
-        max-width: 800px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .images-home {
-        grid-template-columns: repeat(auto-fit, minmax(50px, 200px));
-    }
-    .images-home img{
-        max-width: 200px;
-    }
-    .home-division{
-        max-width: 500px;
-    }
-}
-
-
-
 /* BTN */
-  
-
 .btn{
     line-height: 1;
 
@@ -312,6 +260,100 @@ a.github-icon:hover{
 }
 
 
+@media screen and (max-width: 1500px) {
+    .home-info h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .home-info{
+        line-height: 46px;
+    }
+    .home-info h3 {
+        font-size: 2rem;
+    }
+    .btn-home {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-left{
+        margin-top: 2rem;
+    }
+    .item-right{
+        margin-top: 35rem;
+    }
+    .bolso-matero{
+        animation: floatOnMobileRight 7s ease-in-out infinite;
+    }
+    .set-matero{
+        width: 120px;
+        margin: 0;
+    }
+    .bolso-matero{
+        width: 120px;
+    }
+    .home-info h3 {
+        font-size: 1.5rem;
+        width: 200px;
+        margin-bottom: 0;
+        margin-top: -5rem;
+    }
+    .btn-home{
+        width: 215px;
+        font-size: 1rem;
+        padding: 8px 8px;
+        line-height: 1.5rem;
+        margin-left: -0.5rem;    
+    }
+    .subtitle-home{
+        font-size: 2rem;
+    }
+    .info-content{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home{
+        display: flex;
+        min-height: 80vh;
+    }
+    .home-banner{
+        position: relative;
+    }
+    .set-matero{
+        animation: floatOnMobileLeft 7s ease-in-out infinite;
+        width: 120px;
+    }
+    .info-content{
+        width: 400px;
+    }
+    .home-info h3 {
+        font-size: 1.2rem;
+        margin-top: -2rem;
+    }
+    .item-right{
+        margin-top: 30rem;
+    }
+    .bolso-matero{
+        width: 120px;
+        margin-left: -2rem;
+    }
+    .home-info {
+        line-height: 38px;
+    }
+    .btn-home{
+        width: 150px;
+    }
+    .other-products{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 /* 
 ---------
 SHOP
@@ -335,17 +377,17 @@ main.shop {
 	color: var(--clr-verde);
 	text-transform: capitalize;
     overflow: hidden;
-
 }
 
+
+
 .shop-title-text{
-    animation: slide 12s linear infinite;
+    animation: slide 15s linear infinite;
 }
 
 .shop-title-text h3{
     margin-right: -5rem;
 }
-
 
 .shop-title-text2{
     padding-right: 35rem;
@@ -403,6 +445,7 @@ main.shop {
     overflow: hidden;
 }
 
+
 .img-bg:hover::before{
     content: '';
     position: absolute;
@@ -429,15 +472,6 @@ main.shop {
         transform: rotate(350deg);
     }
 }
-
-.offers-img-bg{
-
-}
-
-/* .images-home img {
-	border: solid 4px var(--clr-verde);
-	border-radius: 8px;
-} */
 
 .img-container img {
     max-width: 350px;
@@ -488,6 +522,19 @@ main.shop {
 	color: var(--clr-verde-osc);
 }
 
+@media screen and (max-width: 1300px) {
+    .shop-title{
+        padding: 2rem 1rem;
+    }
+    .shop-title-text2{
+        padding-right: 15rem;
+    }
+    .img-bg{
+        width: 233px;
+        height: 233px;
+    }
+}
+
 @media screen and (max-width: 1390px) {
     .shop-container {
         grid-template-columns: repeat(auto-fit, minmax(50px, 250px));
@@ -503,31 +550,11 @@ main.shop {
     }
 }
 
-
-
-
 /* 
 ---------
 CARRO
 ---------
 */
-
-.description {
-    display: table;
-    text-align: center;
-    margin: auto;
-    padding: 1rem 2rem 2rem 2rem;
-}
-.description h3 {
-    font-size: 2.5rem;
-    color: var(--clr-verde);
-}
-.description h2 {
-    text-transform: capitalize;
-    color: var(--clr-verde-osc);
-    font-size: 1.5rem;
-    padding: 0rem 0 1rem 0;
-}
 
 .quantity {
     padding: 1rem 0 1.5rem 0;
